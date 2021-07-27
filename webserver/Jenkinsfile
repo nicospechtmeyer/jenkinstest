@@ -1,0 +1,33 @@
+pipeline {
+  environment {
+    DOCKER_REGISTRY_URL = ''
+    DOCKER_REGISTRY_CREDENTIAL = 'abe17233-898c-4efd-a2c3-52ef38a1a663'
+    IMAGE = 'nicosp/my-apache2'
+    FOLDER = 'webserver'
+  }
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh '''cd ${FOLDER}
+docker build -t ${IMAGE} .
+'''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        script {
+          docker.withRegistry('', DOCKER_REGISTRY_CREDENTIAL) {
+            image = docker.image(IMAGE)
+            image.push()
+          }
+        }
+      }
+    }
+    stage('Clean Up') {
+      steps {
+        sh '''docker rmi ${IMAGE}'''
+      }
+    }
+  }
+}
