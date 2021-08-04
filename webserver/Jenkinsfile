@@ -1,7 +1,7 @@
 pipeline {
   environment {
     DOCKER_REGISTRY_URL = ''
-    DOCKER_REGISTRY_CREDENTIAL = '4c5f327f-ae16-4ffe-8142-6007c7137847'
+    DOCKER_REGISTRY_CREDENTIAL = 'dockerhub_nicosp'
     IMAGE = 'nicosp/my-apache2'
     FOLDER = 'webserver'
   }
