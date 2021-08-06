@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Kubedeploy') {
       steps {
-        sh "helm install ./mychart"
+        sh "helm install example ./mychart"
       }
     }
     
