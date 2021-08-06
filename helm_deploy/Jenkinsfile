@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+  stages {
+    stage('Kubedeploy') {
+      steps {
+        sh "helm install ./mychart"
+      }
+    }
+    
+    
+  }
+}
