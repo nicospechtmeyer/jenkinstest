@@ -1,9 +1,14 @@
 pipeline {
+    environment {
+        FOLDER = 'helm_deploy'
+    }
   agent any
   stages {
     stage('Kubedeploy') {
       steps {
-        sh "helm install example /mychart -n dev-test"
+        sh ''' cd ${FOLDER}
+helm install example /mychart -n dev-test
+'''
       }
     }
     
