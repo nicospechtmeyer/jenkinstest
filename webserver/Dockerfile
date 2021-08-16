@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 
-LABEL maintainer="joern@sprado.net"
-
 ARG CONTAINER_TIMEZONE=Europe/Berlin
 
 # Set timezone:
