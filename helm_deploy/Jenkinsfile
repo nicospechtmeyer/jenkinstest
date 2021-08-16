@@ -7,7 +7,7 @@ pipeline {
     stage('Kubedeploy') {
       steps {
         sh ''' cd ${FOLDER}
-helm install example ./mychart -n dev-test
+helm upgrade --install example ./mychart -n dev-test
 '''
       }
     }    
