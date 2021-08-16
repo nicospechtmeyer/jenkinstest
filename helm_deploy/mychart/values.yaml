@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: ubuntu
+  repository: nginx
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20.04"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
