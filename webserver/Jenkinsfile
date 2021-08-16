@@ -2,7 +2,7 @@ pipeline {
   environment {
     DOCKER_REGISTRY_URL = ''
     DOCKER_REGISTRY_CREDENTIAL = 'dockerhub_nicosp'
-    IMAGE = 'nicosp/analytics-base'
+    IMAGE = 'nicosp/base'
     FOLDER = 'webserver'
   }
   agent any
