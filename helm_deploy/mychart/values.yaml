@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nicosp/analytics-base
+  repository: nginx
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
@@ -35,10 +35,6 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
-
-service:
-  type: ClusterIP
-  port: 81
 
 ingress:
   enabled: false
