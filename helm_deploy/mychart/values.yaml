@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: nicosp/base-app
+  repository: jsprado/analytics-base:11
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
