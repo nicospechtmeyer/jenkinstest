@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 
-LABEL maintainer="joern@sprado.net"
-
 ARG CONTAINER_TIMEZONE=Europe/Berlin
 
 # Set timezone:
@@ -13,8 +11,13 @@ RUN echo "Install some additional packages" && \
 	locales \
 	sudo \
 	nano \
+	ssh \
 	build-essential \
 	supervisor \
 	screen \
 	htop \
 	openjdk-11-jre
+
+RUN echo "Enable SSH" && \
+	systemctl ssh start && \
+	systemctl ssh enable
