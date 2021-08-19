@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: jsprado/analytics-api-r
+  repository: nginx
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.0.1"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
