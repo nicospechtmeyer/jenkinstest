@@ -1,0 +1,16 @@
+pipeline {
+    environment {
+        FOLDER = 'helm_analytics_api_deploy'
+    }
+  agent any
+  stages {
+    stage('Kubedeploy') {
+      steps {
+        sh ''' cd ${FOLDER}
+helm upgrade --install example ./analytics-api -n analytics-api
+'''
+      }
+    }    
+  }
+}
+
