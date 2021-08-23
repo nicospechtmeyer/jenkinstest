@@ -7,7 +7,7 @@ pipeline {
     stage('Kubedeploy') {
       steps {
         sh ''' cd ${FOLDER}
-helm upgrade --install example ./analytics-api -n analytics-api
+helm upgrade --install analytics-api ./analytics-api -n analytics-api
 '''
       }
     }    
