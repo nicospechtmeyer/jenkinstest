@@ -85,12 +85,10 @@ tolerations: []
 affinity:
   podAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
-    - weight: 100
-      podAffinityTerm:
-        labelSelector:
-          matchExpressions:
-          - key: "app.kubernetes.io/name"
-            operator: In
-            values:
-            - analytics-api
-        topologyKey: "kubernetes.io/hostname"
+    - labelSelector:
+        matchExpressions:
+        - key: "app.kubernetes.io/name"
+          operator: In
+          values:
+          - analytics-api
+      topologyKey: "kubernetes.io/hostname"
