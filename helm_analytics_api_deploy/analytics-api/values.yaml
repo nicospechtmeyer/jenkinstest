@@ -83,12 +83,12 @@ nodeSelector: {}
 tolerations: []
 
 affinity:
-  podAntiAffinity:
+  nodeAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
-    - labelSelector:
+    - nodeSelectorTerms:
         matchExpressions:
-        - key: app
+        - key: "node.kubernetes.io/instance-type"
           operator: In
           values:
-          - analytics-api
-      topologyKey: kubernetes.io/hostname
+          - k3s
+      
