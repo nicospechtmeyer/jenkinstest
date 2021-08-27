@@ -83,7 +83,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity:
-  nodeAntiAffinity:
+  nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
     - nodeSelectorTerms:
         matchExpressions:
