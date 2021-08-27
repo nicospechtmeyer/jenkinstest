@@ -41,7 +41,7 @@ service:
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   className: ""
   annotations: {
     traefik.ingress.kubernetes.io/router.entrypoints: web
