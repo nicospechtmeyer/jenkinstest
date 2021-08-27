@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 4
+replicaCount: 3
 
 image:
   repository: jsprado/analytics-api-r
@@ -82,5 +82,15 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}
-      
+affinity:
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - weight: 100
+      podAffinityTerm:
+        labelSelector:
+          matchExpressions:
+          - key: "app.kubernetes.io/name"
+            operator: In
+            values:
+            - analytics-api
+        topologyKey: "kubernetes.io/hostname"
