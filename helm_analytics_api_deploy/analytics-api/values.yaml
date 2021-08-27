@@ -87,7 +87,7 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
     - nodeSelectorTerms:
         matchExpressions:
-        - key: "node.kubernetes.io/instance-type"
+        - key: node.kubernetes.io/instance-type
           operator: In
           values:
           - k3s
