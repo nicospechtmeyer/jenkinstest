@@ -82,13 +82,5 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity:
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-    - nodeSelectorTerms:
-        matchExpressions:
-        - key: node.kubernetes.io/instance-type
-          operator: In
-          values:
-          - k3s
+affinity: {}
       
