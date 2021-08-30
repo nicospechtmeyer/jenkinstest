@@ -5,7 +5,7 @@ pipeline {
         DOCKER_REGISTRY_URL = ''
         DOCKER_REGISTRY_CREDENTIAL = 'dockerhub_nicosp'
         IMAGE = 'nicosp/analytics-api'
-        IMAGE = '0.0.1'
+        IMAGE_VERSION = '0.0.1'
     }
   agent any
   stages {
