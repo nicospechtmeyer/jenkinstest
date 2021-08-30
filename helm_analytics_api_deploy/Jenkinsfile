@@ -9,6 +9,22 @@ pipeline {
     }
   agent any
   stages {
+    stage('Build Artifact') {
+      agent {
+        docker {
+          image 'gradle:7.0.2-jdk11'
+          reuseNode true
+        }
+      }
+      post {
+        always {
+          junit '**/build/test-results/test/TEST-*.xml'
+        }
+      }
+      steps {
+        sh '''gradle clean build installDist'''
+      }
+    }
     stage('Build Image') {
       steps {
         sh '''
