@@ -13,9 +13,13 @@ pipeline {
       steps {
         sh '''
            cd ${DOCKER_FOLDER}
-           ls
-           sudo docker version
+           docker build -t ${IMAGE}:${IMAGE_VERSION} .
            '''
+      }
+    }
+    stage('Clean Up') {
+      steps {
+        sh '''docker rmi ${IMAGE}'''
       }
     }
     stage('Deploy To Kubernetes') {
