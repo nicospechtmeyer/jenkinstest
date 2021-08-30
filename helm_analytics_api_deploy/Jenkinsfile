@@ -10,9 +10,9 @@ pipeline {
   stages {
     stage('Build Image') {
       steps {
-        sh 'cd ${DOCKERFOLDER}
+        sh '''cd ${DOCKERFOLDER}
             ls
-            docker version'
+            docker version'''
       }
     }
     stage('Deploy To Kubernetes') {
