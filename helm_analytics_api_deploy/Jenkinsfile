@@ -1,14 +1,24 @@
 pipeline {
     environment {
-        FOLDER = 'helm_analytics_api_deploy'
+        BASEFOLDER = 'helm_analytics_api_deploy'
+        DOCKERFOLDER = './docker/analytics-api'
+        DOCKER_REGISTRY_URL = ''
+        DOCKER_REGISTRY_CREDENTIAL = 'dockerhub_nicosp'
+        IMAGE = 'nicosp/analytics-api'
     }
   agent any
   stages {
-    stage('Kubedeploy') {
+    stage('Build Image') {
       steps {
-        sh ''' cd ${FOLDER}
-helm upgrade --install analytics-api ./analytics-api -n analytics-api
-'''
+        sh 'cd ${DOCKERFOLDER}'
+      }
+    }
+    stage('Deploy To Kubernetes') {
+      steps {
+        sh 'cd ${BASEFOLDER}'
+//         sh ''' cd ${BASEFOLDER}
+// helm upgrade --install analytics-api ./analytics-api -n analytics-api
+// '''
       }
     }    
   }
