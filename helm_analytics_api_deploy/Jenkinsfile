@@ -22,7 +22,7 @@ pipeline {
         }
       }
       steps {
-        sh '''gradle tasks'''
+        sh '''gradle tasks --debug'''
       }
     }
     stage('Build Image') {
