@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/src/main/java/de/polipol/analytics/MicroConnect.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="AUTH_CLIENT_ID" value="analytics-app"/>
+        <mapEntry key="AUTH_ENABLED" value="FALSE"/>
+        <mapEntry key="AUTH_HOST" value="https://analytics.polipol-service.de/auth"/>
+        <mapEntry key="AUTH_REALM" value="analytics"/>
+        <mapEntry key="AUTH_SECRET" value="343a7a20-49f1-4401-85d9-cdfc06b52769"/>
+        <mapEntry key="PLATFORM_ENCRYPTION_KEY" value=""/>
+        <mapEntry key="DEV_MODE" value="TRUE"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.buildship.core.classpathprovider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="de.polipol.analytics.MicroConnect"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="analytics-api"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-port=1111"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="analytics-api"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=/libs/amd64/sapjco3.dll"/>
+</launchConfiguration>
