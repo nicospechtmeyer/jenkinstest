@@ -1,7 +1,7 @@
 pipeline {
     environment {
         BASEFOLDER = 'helm_analytics_api_deploy'
-        DOCKERFOLDER = './docker/analytics-api'
+        DOCKERFOLDER = 'helm_analytics_api_deploy/docker/analytics-api'
         DOCKER_REGISTRY_URL = ''
         DOCKER_REGISTRY_CREDENTIAL = 'dockerhub_nicosp'
         IMAGE = 'nicosp/analytics-api'
