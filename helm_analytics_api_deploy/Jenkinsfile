@@ -22,7 +22,7 @@ pipeline {
         }
       }
       steps {
-        sh '''gradle clean build installDist'''
+        sh '''gradle tasks'''
       }
     }
     stage('Build Image') {
