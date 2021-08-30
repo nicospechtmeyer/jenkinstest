@@ -1,0 +1,173 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "application"
+
+group "de.polipol.analytics"
+version "1.0"
+
+applicationName = "analytics-api"
+mainClassName = "de.polipol.analytics.MicroModel"
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+def sapjcoWindowsPath = "libs/win64"
+def sapjcoLinuxPath = "libs/linux"
+
+repositories {
+    if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+        flatDir {
+            dirs "${rootProject.projectDir}/libs", "${rootProject.projectDir}/libs/renjin", "${rootProject.projectDir}/${sapjcoWindowsPath}"
+        }
+    }
+    if (org.gradle.internal.os.OperatingSystem.current().isLinux()) {
+        flatDir {
+            dirs "${rootProject.projectDir}/libs", "${rootProject.projectDir}/libs/renjin", "${rootProject.projectDir}/${sapjcoLinuxPath}"
+        }
+    }
+    if (org.gradle.internal.os.OperatingSystem.current().isMacOsX()) {
+        flatDir {
+            dirs "${rootProject.projectDir}/libs", "${rootProject.projectDir}/libs/renjin", "${rootProject.projectDir}/${sapjcoLinuxPath}"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // Logging
+    implementation group: "org.slf4j", name: "slf4j-simple", version: "1.7.30" // X11 (MIT) license
+
+    // Json
+	implementation group: "com.google.code.gson", name: "gson", version: "2.3.1" // Apache Licence 2.0
+    // Maps, Strings, etc.
+    implementation group: "org.apache.commons", name: "commons-collections4", version: "4.1" // Apache Licence 2.0
+    implementation group: "org.apache.commons", name: "commons-lang3", version: "3.11" // Apache Licence 2.0
+    implementation group: "commons-io", name: "commons-io", version: "2.6" // Apache Licence 2.0
+    implementation group: "commons-codec", name: "commons-codec", version: "1.11" // Apache Licence 2.0
+
+    // CLI
+    implementation group: "commons-cli", name: "commons-cli", version: "1.4" // Apache Licence 2.0
+
+    // RESTful services
+    implementation group: "io.javalin", name: "javalin", version: "3.12.0" // Apache Licence 2.0
+    implementation group: "io.javalin", name: "javalin-openapi", version: "3.12.0" // Apache Licence 2.0
+
+    // Encryption
+    implementation group: "org.jasypt", name: "jasypt", version: "1.9.3" // Apache Licence 2.0
+
+    // Security
+    implementation group: "org.pac4j", name: "pac4j-core", version: "4.0.0" // Apache Licence 2.0
+    implementation group: "org.pac4j", name: "pac4j-oidc", version: "4.0.0" // Apache Licence 2.0
+    implementation group: "org.pac4j", name: "pac4j-http", version: "4.0.0" // Apache Licence 2.0 
+    implementation group: "org.pac4j", name: "javalin-pac4j", version: "3.0.0" // Apache Licence 2.0
+    
+    // Storage
+    implementation group: "commons-io", name: "commons-io", version: "2.6" // Apache Licence 2.0
+    implementation group: "io.jsondb", name: "jsondb-core", version: "1.0.115-j8" // MIT Licence
+    implementation group: "redis.clients", name: "jedis", version: "3.5.1"
+        
+	// Connect
+    // Wrapping R sessions
+    implementation group: "com.github.yannrichet", name: "Rsession", version: "3.1.3" // BSD 2-Clause License
+    implementation group: "org.rosuda.REngine", name: "Rserve", version: "1.8.1" // BSD 2-Clause License
+    implementation group: "org.rosuda.REngine", name: "REngine", version: "2.1.0" // BSD 2-Clause License
+
+    // MSSQL-Adapter
+    implementation group: "com.microsoft.sqlserver", name: "mssql-jdbc", version: "9.2.1.jre11" // X11 (MIT) license
+    // MSSQL-Adapter
+    implementation group: "mysql", name: "mysql-connector-java", version: "8.0.24" // GNU General Public License 2.0
+    // OLAP-Adapter
+    implementation group: "org.olap4j", name: "olap4j", version: "1.2.0" // Apache Licence 2.0
+    implementation group: "org.olap4j", name: "olap4j-xmla", version: "1.2.0" // Apache Licence 2.0
+    // High-level SAP-Adapter
+    implementation group: "org.hibersap", name: "hibersap-core", version: "1.2.0" // Apache Licence 2.0
+    implementation group: "org.hibersap", name: "hibersap-jco", version: "1.2.0" // Apache Licence 2.0   
+    // implementation group: "org.hibersap", name: "com.sap.conn.jco.sapjco3", version: "3.0.15" // Apache Licence 2.0       
+    // implementation group: "org.hibersap", name: "hibersap-core", version: "1.4.0" // Apache Licence 2.0
+    // implementation group: "org.hibersap", name: "hibersap-jco", version: "1.4.0" // Apache Licence 2.0
+
+	// Redis Mock
+	implementation group: "com.github.fppt", name: "jedis-mock", version: "0.1.16"
+    
+    // Creating jobs
+    // implementation group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.2' // Apache Licence 2.0
+    implementation group: "com.mashape.unirest", name: "unirest-java", version: "1.4.9" // X11 (MIT) license
+    
+    // VueJS
+    implementation group: "io.javalin", name: "javalin", version: "3.9.0"
+	implementation group: "com.fasterxml.jackson.module", name: "jackson-module-kotlin", version: "2.9.9"
+    implementation group: "org.webjars.npm", name: "vue", version: "2.6.14"
+    implementation group: "org.webjars.npm", name: "axios", version: "0.21.1"
+    implementation group: "org.webjars.npm", name: "vuetify", version: "2.5.5"
+        
+	// Testing
+    testImplementation group: "junit", name: "junit", version: "4.13.2" // Eclipse Public License 1.0
+    testImplementation group: "org.hamcrest", name: "hamcrest-all", version: "1.3" // BSD 3-Clause License
+    testImplementation group: "io.mockk", name: "mockk", version: "1.9.3"
+    testImplementation group: "org.mockito", name: "mockito-core", version: "3.2.4"
+	testImplementation group: "com.konghq", name: "unirest-java", version: "3.4.00"	
+	testImplementation group: "org.assertj", name: "assertj-core", version: "3.11.1"
+}
+
+test {
+    testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = "full"
+}
+
+task runAnalyticsServices(dependsOn: 'classes', type: JavaExec) {
+    group = "run"
+    description = "Run Analytics Services"
+    classpath sourceSets.main.runtimeClasspath
+    main = "de.polipol.analytics.MicroAll"
+    environment("DEV_MODE", "TRUE")
+    environment("AUTH_ENABLED", "FALSE")
+    environment("AUTH_HOST", "https://analytics.sprado.net/auth")
+    environment("AUTH_CLIENT_ID", "analytics-app")
+    environment("AUTH_REALM", "analytics")
+    environment("AUTH_CALLBACK", "")
+    environment("AUTH_SECRET", "")
+    environment("CACHE_MOCK", "FALSE")
+    environment("DB_FILES_LOCATION", "./data/db")
+}
+
+task runFileService(dependsOn: 'classes', type: JavaExec) {
+    group = "run"
+    description = "Run File Service"
+    classpath sourceSets.main.runtimeClasspath
+    main = "de.polipol.analytics.MicroFile"
+    environment("DEV_MODE", "TRUE")
+    environment("AUTH_ENABLED", "FALSE")
+    args '-port=8082'
+}
+
+task runModelService(dependsOn: 'classes', type: JavaExec) {
+    group = "run"
+    description = "Run Model Service"
+    classpath sourceSets.main.runtimeClasspath
+    main = "de.polipol.analytics.MicroModel"
+    environment("DEV_MODE", "TRUE")
+    environment("AUTH_ENABLED", "FALSE")
+    environment("AUTH_HOST", "https://analytics.sprado.net/auth")
+    environment("AUTH_CLIENT_ID", "analytics-app")
+    environment("AUTH_REALM", "analytics")
+    environment("AUTH_CALLBACK", "")
+    environment("AUTH_SECRET", "")
+    environment("CACHE_MOCK", "FALSE")
+    environment("DB_FILES_LOCATION", "./data/db")
+    args '-port=8084'
+}
+
+task runCacheImporter(dependsOn: 'classes', type: JavaExec) {
+    group = "run"
+    description = "Run Cache Importer"
+    classpath sourceSets.main.runtimeClasspath
+    main = "de.polipol.analytics.MicroImporter"
+    environment("DEV_MODE", "TRUE")
+    environment("DB_FILES_LOCATION", "./data/db")
+}
+
+distributions {
+    main {
+        distributionBaseName = "analytics-api"
+    }
+}

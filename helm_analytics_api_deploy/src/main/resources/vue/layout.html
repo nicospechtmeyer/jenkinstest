@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <script src="/webjars/vue/2.6.14/dist/vue.min.js"></script>
+    <script src="/webjars/axios/0.21.1/dist/axios.min.js"></script>
+    <script src="/webjars/vuetify/2.5.5/dist/vuetify.min.js"></script>
+    <script src="/webjars/vuetify/2.5.5/dist/vuetify.min.css"></script>
+    <link href="/webjars/vuetify/2.5.5/dist/vuetify.min.css" rel="stylesheet"></link>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    @componentRegistration
+</head>
+<body>
+<main id="main-app" v-cloak>
+    @routeComponent  
+</main>
+<script>
+	const opts = {
+	  theme: {
+	      options: {
+	        customProperties: true
+	      },
+      dark: false,
+      themes: {
+        light: {
+          primary: '#2a70ff', // '#de2c8f', // #1a4a73', // '#F37720',
+          // secondary: colors.grey.lighten4,
+          accent: '#ea4335',
+          info: '#d6d6d6',
+          // warning: colors.amber.darken2,
+          error: '#ea4335',
+          success: '#93d88e',
+          background: '#f1f1f1',
+          background2: '#FAFAFA', // '#f1f1f1',
+          toolbar: '#1E2E3C', // '#022140',
+          toolbar2: '#ffffff',
+          menu: '#002B5E',
+          menu2: '#063468',
+          text: '#022140',
+          // text2: colors.grey.darken2,
+          // tableHover: colors.grey.lighten4,
+          border: '#E0E0E0',
+          // overlay: colors.grey.darken2
+        },
+        dark: {
+        }
+      }
+    }
+  };
+  new Vue({
+    el: "#main-app",
+    vuetify: new Vuetify(opts)
+  });
+</script>
+</body>
+</html>

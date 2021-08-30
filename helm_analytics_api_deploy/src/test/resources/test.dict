@@ -1,0 +1,16 @@
+@containerLabel=testContainer1
+
+client=MANDT;string;str_pad('{{value}}', 3, pad='0')
+division=SPART
+salesOrganisation=VKORG;string;str_pad('{{value}}', 4, pad='0')
+month=SPMON;date
+salesOrderStock@container=OAUWE;number
+sales=UMKZWI3;number
+incomingOrders=AEKZWI3;number
+modelSystem=MSYST;number
+materialGroup=MATKL;string
+
+customerNumber~context>contextvalue=KNDNR;string
+customerNumber=KUNNR;string
+customerNumber=KUNID;string
+

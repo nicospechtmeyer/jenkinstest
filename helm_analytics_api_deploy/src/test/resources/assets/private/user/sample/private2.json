@@ -1,0 +1,822 @@
+[
+  {
+    "Package": "acepack",
+    "Version": "1.4.1"
+  },
+  {
+    "Package": "antiword",
+    "Version": "1.3"
+  },
+  {
+    "Package": "askpass",
+    "Version": "1.1"
+  },
+  {
+    "Package": "assertthat",
+    "Version": "0.2.0"
+  },
+  {
+    "Package": "backports",
+    "Version": "1.1.3"
+  },
+  {
+    "Package": "base64enc",
+    "Version": "0.1-3"
+  },
+  {
+    "Package": "BH",
+    "Version": "1.69.0-1"
+  },
+  {
+    "Package": "bit",
+    "Version": "1.1-14"
+  },
+  {
+    "Package": "bit64",
+    "Version": "0.9-7"
+  },
+  {
+    "Package": "bitops",
+    "Version": "1.0-6"
+  },
+  {
+    "Package": "BradleyTerry2",
+    "Version": "1.1-0"
+  },
+  {
+    "Package": "brglm",
+    "Version": "0.6.2"
+  },
+  {
+    "Package": "callr",
+    "Version": "3.1.1"
+  },
+  {
+    "Package": "caret",
+    "Version": "6.0-84"
+  },
+  {
+    "Package": "caTools",
+    "Version": "1.17.1.2"
+  },
+  {
+    "Package": "checkmate",
+    "Version": "1.9.3"
+  },
+  {
+    "Package": "classInt",
+    "Version": "0.3-3"
+  },
+  {
+    "Package": "cli",
+    "Version": "1.0.1"
+  },
+  {
+    "Package": "clipr",
+    "Version": "0.5.0"
+  },
+  {
+    "Package": "clisymbols",
+    "Version": "1.2.0"
+  },
+  {
+    "Package": "colorspace",
+    "Version": "1.4-1"
+  },
+  {
+    "Package": "combinat",
+    "Version": "0.0-8"
+  },
+  {
+    "Package": "corpcor",
+    "Version": "1.6.9"
+  },
+  {
+    "Package": "covr",
+    "Version": "3.2.1"
+  },
+  {
+    "Package": "crayon",
+    "Version": "1.3.4"
+  },
+  {
+    "Package": "Cubist",
+    "Version": "0.2.2"
+  },
+  {
+    "Package": "curl",
+    "Version": "3.3"
+  },
+  {
+    "Package": "data.table",
+    "Version": "1.12.2"
+  },
+  {
+    "Package": "DBI",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "desc",
+    "Version": "1.2.0"
+  },
+  {
+    "Package": "devtools",
+    "Version": "2.0.1"
+  },
+  {
+    "Package": "diffobj",
+    "Version": "0.2.3"
+  },
+  {
+    "Package": "digest",
+    "Version": "0.6.18"
+  },
+  {
+    "Package": "dplyr",
+    "Version": "0.8.0"
+  },
+  {
+    "Package": "e1071",
+    "Version": "1.7-2"
+  },
+  {
+    "Package": "earth",
+    "Version": "5.1.1"
+  },
+  {
+    "Package": "ellipse",
+    "Version": "0.4.1"
+  },
+  {
+    "Package": "ellipsis",
+    "Version": "0.1.0"
+  },
+  {
+    "Package": "evaluate",
+    "Version": "0.13"
+  },
+  {
+    "Package": "fansi",
+    "Version": "0.4.0"
+  },
+  {
+    "Package": "fastICA",
+    "Version": "1.2-1"
+  },
+  {
+    "Package": "filehash",
+    "Version": "2.4-2"
+  },
+  {
+    "Package": "fontBitstreamVera",
+    "Version": "0.1.1"
+  },
+  {
+    "Package": "fontLiberation",
+    "Version": "0.1.0"
+  },
+  {
+    "Package": "fontquiver",
+    "Version": "0.2.1"
+  },
+  {
+    "Package": "forcats",
+    "Version": "0.4.0"
+  },
+  {
+    "Package": "foreach",
+    "Version": "1.4.4"
+  },
+  {
+    "Package": "Formula",
+    "Version": "1.2-3"
+  },
+  {
+    "Package": "freetypeharfbuzz",
+    "Version": "0.2.5"
+  },
+  {
+    "Package": "fs",
+    "Version": "1.2.6"
+  },
+  {
+    "Package": "gam",
+    "Version": "1.16"
+  },
+  {
+    "Package": "gdata",
+    "Version": "2.18.0"
+  },
+  {
+    "Package": "generics",
+    "Version": "0.0.2"
+  },
+  {
+    "Package": "ggplot2",
+    "Version": "3.2.0"
+  },
+  {
+    "Package": "ggplot2movies",
+    "Version": "0.0.1"
+  },
+  {
+    "Package": "gh",
+    "Version": "1.0.1"
+  },
+  {
+    "Package": "git2r",
+    "Version": "0.24.0"
+  },
+  {
+    "Package": "glue",
+    "Version": "1.3.0"
+  },
+  {
+    "Package": "gower",
+    "Version": "0.2.1"
+  },
+  {
+    "Package": "gplots",
+    "Version": "3.0.1.1"
+  },
+  {
+    "Package": "gridExtra",
+    "Version": "2.3"
+  },
+  {
+    "Package": "gtable",
+    "Version": "0.3.0"
+  },
+  {
+    "Package": "gtools",
+    "Version": "3.8.1"
+  },
+  {
+    "Package": "haven",
+    "Version": "2.1.0"
+  },
+  {
+    "Package": "hexbin",
+    "Version": "1.27.3"
+  },
+  {
+    "Package": "highr",
+    "Version": "0.7"
+  },
+  {
+    "Package": "Hmisc",
+    "Version": "4.2-0"
+  },
+  {
+    "Package": "hms",
+    "Version": "0.4.2"
+  },
+  {
+    "Package": "htmlTable",
+    "Version": "1.13.1"
+  },
+  {
+    "Package": "htmltools",
+    "Version": "0.3.6"
+  },
+  {
+    "Package": "htmlwidgets",
+    "Version": "1.3"
+  },
+  {
+    "Package": "httpuv",
+    "Version": "1.5.1"
+  },
+  {
+    "Package": "httr",
+    "Version": "1.4.0"
+  },
+  {
+    "Package": "ini",
+    "Version": "0.3.1"
+  },
+  {
+    "Package": "ipred",
+    "Version": "0.9-9"
+  },
+  {
+    "Package": "ISwR",
+    "Version": "2.0-7"
+  },
+  {
+    "Package": "iterators",
+    "Version": "1.0.10"
+  },
+  {
+    "Package": "jsonlite",
+    "Version": "1.6"
+  },
+  {
+    "Package": "kernlab",
+    "Version": "0.9-27"
+  },
+  {
+    "Package": "klaR",
+    "Version": "0.6-14"
+  },
+  {
+    "Package": "knitr",
+    "Version": "1.21"
+  },
+  {
+    "Package": "labeling",
+    "Version": "0.3"
+  },
+  {
+    "Package": "labelled",
+    "Version": "2.2.1"
+  },
+  {
+    "Package": "later",
+    "Version": "0.8.0"
+  },
+  {
+    "Package": "latticeExtra",
+    "Version": "0.6-28"
+  },
+  {
+    "Package": "lava",
+    "Version": "1.6.5"
+  },
+  {
+    "Package": "lazyeval",
+    "Version": "0.2.2"
+  },
+  {
+    "Package": "lme4",
+    "Version": "1.1-21"
+  },
+  {
+    "Package": "lubridate",
+    "Version": "1.7.4"
+  },
+  {
+    "Package": "magrittr",
+    "Version": "1.5"
+  },
+  {
+    "Package": "mapproj",
+    "Version": "1.2.6"
+  },
+  {
+    "Package": "maps",
+    "Version": "3.3.0"
+  },
+  {
+    "Package": "maptools",
+    "Version": "0.9-5"
+  },
+  {
+    "Package": "markdown",
+    "Version": "0.9"
+  },
+  {
+    "Package": "MatrixModels",
+    "Version": "0.4-1"
+  },
+  {
+    "Package": "matrixStats",
+    "Version": "0.54.0"
+  },
+  {
+    "Package": "mda",
+    "Version": "0.4-10"
+  },
+  {
+    "Package": "memoise",
+    "Version": "1.1.0"
+  },
+  {
+    "Package": "mime",
+    "Version": "0.6"
+  },
+  {
+    "Package": "miniUI",
+    "Version": "0.1.1.1"
+  },
+  {
+    "Package": "minqa",
+    "Version": "1.2.4"
+  },
+  {
+    "Package": "mlbench",
+    "Version": "2.1-1"
+  },
+  {
+    "Package": "MLmetrics",
+    "Version": "1.1.1"
+  },
+  {
+    "Package": "ModelMetrics",
+    "Version": "1.2.2"
+  },
+  {
+    "Package": "modeltools",
+    "Version": "0.2-22"
+  },
+  {
+    "Package": "munsell",
+    "Version": "0.5.0"
+  },
+  {
+    "Package": "nanotime",
+    "Version": "0.2.4"
+  },
+  {
+    "Package": "nloptr",
+    "Version": "1.2.1"
+  },
+  {
+    "Package": "NLP",
+    "Version": "0.2-0"
+  },
+  {
+    "Package": "numDeriv",
+    "Version": "2016.8-1.1"
+  },
+  {
+    "Package": "openssl",
+    "Version": "1.2.1"
+  },
+  {
+    "Package": "pamr",
+    "Version": "1.56.1"
+  },
+  {
+    "Package": "pillar",
+    "Version": "1.3.1"
+  },
+  {
+    "Package": "pkgbuild",
+    "Version": "1.0.2"
+  },
+  {
+    "Package": "pkgconfig",
+    "Version": "2.0.2"
+  },
+  {
+    "Package": "pkgload",
+    "Version": "1.0.2"
+  },
+  {
+    "Package": "plogr",
+    "Version": "0.2.0"
+  },
+  {
+    "Package": "plotmo",
+    "Version": "3.5.4"
+  },
+  {
+    "Package": "plotrix",
+    "Version": "3.7-5"
+  },
+  {
+    "Package": "pls",
+    "Version": "2.7-1"
+  },
+  {
+    "Package": "plyr",
+    "Version": "1.8.4"
+  },
+  {
+    "Package": "praise",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "prettyunits",
+    "Version": "1.0.2"
+  },
+  {
+    "Package": "pROC",
+    "Version": "1.15.0"
+  },
+  {
+    "Package": "processx",
+    "Version": "3.2.1"
+  },
+  {
+    "Package": "prodlim",
+    "Version": "2018.04.18"
+  },
+  {
+    "Package": "profileModel",
+    "Version": "0.6.0"
+  },
+  {
+    "Package": "profvis",
+    "Version": "0.3.6"
+  },
+  {
+    "Package": "promises",
+    "Version": "1.0.1"
+  },
+  {
+    "Package": "proxy",
+    "Version": "0.4-23"
+  },
+  {
+    "Package": "ps",
+    "Version": "1.3.0"
+  },
+  {
+    "Package": "purrr",
+    "Version": "0.3.0"
+  },
+  {
+    "Package": "qpdf",
+    "Version": "1.1"
+  },
+  {
+    "Package": "quantreg",
+    "Version": "5.40"
+  },
+  {
+    "Package": "questionr",
+    "Version": "0.7.0"
+  },
+  {
+    "Package": "qvcalc",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "R.methodsS3",
+    "Version": "1.7.1"
+  },
+  {
+    "Package": "R.oo",
+    "Version": "1.22.0"
+  },
+  {
+    "Package": "R.utils",
+    "Version": "2.9.0"
+  },
+  {
+    "Package": "R6",
+    "Version": "2.4.0"
+  },
+  {
+    "Package": "randomForest",
+    "Version": "4.6-14"
+  },
+  {
+    "Package": "RANN",
+    "Version": "2.6.1"
+  },
+  {
+    "Package": "rcmdcheck",
+    "Version": "1.3.2"
+  },
+  {
+    "Package": "RColorBrewer",
+    "Version": "1.1-2"
+  },
+  {
+    "Package": "Rcpp",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "RcppCCTZ",
+    "Version": "0.2.5"
+  },
+  {
+    "Package": "RcppEigen",
+    "Version": "0.3.3.5.0"
+  },
+  {
+    "Package": "RcppRoll",
+    "Version": "0.3.0"
+  },
+  {
+    "Package": "RCurl",
+    "Version": "1.95-4.12"
+  },
+  {
+    "Package": "readr",
+    "Version": "1.3.1"
+  },
+  {
+    "Package": "recipes",
+    "Version": "0.1.5"
+  },
+  {
+    "Package": "remotes",
+    "Version": "2.0.2"
+  },
+  {
+    "Package": "reshape2",
+    "Version": "1.4.3"
+  },
+  {
+    "Package": "rex",
+    "Version": "1.1.2"
+  },
+  {
+    "Package": "rjson",
+    "Version": "0.2.20"
+  },
+  {
+    "Package": "rlang",
+    "Version": "0.3.1"
+  },
+  {
+    "Package": "rmarkdown",
+    "Version": "1.11"
+  },
+  {
+    "Package": "ROCR",
+    "Version": "1.0-7"
+  },
+  {
+    "Package": "rprojroot",
+    "Version": "1.3-2"
+  },
+  {
+    "Package": "Rserve",
+    "Version": "1.8-6"
+  },
+  {
+    "Package": "rstudioapi",
+    "Version": "0.9.0"
+  },
+  {
+    "Package": "rvest",
+    "Version": "0.3.2"
+  },
+  {
+    "Package": "sandwich",
+    "Version": "2.5-1"
+  },
+  {
+    "Package": "scales",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "selectr",
+    "Version": "0.4-1"
+  },
+  {
+    "Package": "sessioninfo",
+    "Version": "1.1.1"
+  },
+  {
+    "Package": "shiny",
+    "Version": "1.3.2"
+  },
+  {
+    "Package": "slam",
+    "Version": "0.1-45"
+  },
+  {
+    "Package": "SnowballC",
+    "Version": "0.6.0"
+  },
+  {
+    "Package": "sourcetools",
+    "Version": "0.1.7"
+  },
+  {
+    "Package": "sp",
+    "Version": "1.3-1"
+  },
+  {
+    "Package": "SparseM",
+    "Version": "1.77"
+  },
+  {
+    "Package": "spls",
+    "Version": "2.2-3"
+  },
+  {
+    "Package": "SQUAREM",
+    "Version": "2017.10-1"
+  },
+  {
+    "Package": "stringi",
+    "Version": "1.3.1"
+  },
+  {
+    "Package": "stringr",
+    "Version": "1.4.0"
+  },
+  {
+    "Package": "strucchange",
+    "Version": "1.5-1"
+  },
+  {
+    "Package": "subselect",
+    "Version": "0.14"
+  },
+  {
+    "Package": "superpc",
+    "Version": "1.09"
+  },
+  {
+    "Package": "sys",
+    "Version": "2.1"
+  },
+  {
+    "Package": "tau",
+    "Version": "0.0-21"
+  },
+  {
+    "Package": "TeachingDemos",
+    "Version": "2.10"
+  },
+  {
+    "Package": "testthat",
+    "Version": "2.1.1"
+  },
+  {
+    "Package": "TH.data",
+    "Version": "1.0-10"
+  },
+  {
+    "Package": "tibble",
+    "Version": "2.0.1"
+  },
+  {
+    "Package": "tidyr",
+    "Version": "0.8.3"
+  },
+  {
+    "Package": "tidyselect",
+    "Version": "0.2.5"
+  },
+  {
+    "Package": "timeDate",
+    "Version": "3043.102"
+  },
+  {
+    "Package": "tinytex",
+    "Version": "0.10"
+  },
+  {
+    "Package": "tm",
+    "Version": "0.7-6"
+  },
+  {
+    "Package": "usethis",
+    "Version": "1.4.0"
+  },
+  {
+    "Package": "utf8",
+    "Version": "1.1.4"
+  },
+  {
+    "Package": "viridis",
+    "Version": "0.5.1"
+  },
+  {
+    "Package": "viridisLite",
+    "Version": "0.3.0"
+  },
+  {
+    "Package": "whisker",
+    "Version": "0.3-2"
+  },
+  {
+    "Package": "withr",
+    "Version": "2.1.2"
+  },
+  {
+    "Package": "wordcloud",
+    "Version": "2.6"
+  },
+  {
+    "Package": "xfun",
+    "Version": "0.4"
+  },
+  {
+    "Package": "XML",
+    "Version": "3.98-1.20"
+  },
+  {
+    "Package": "xml2",
+    "Version": "1.2.0"
+  },
+  {
+    "Package": "xopen",
+    "Version": "1.0.0"
+  },
+  {
+    "Package": "xtable",
+    "Version": "1.8-4"
+  },
+  {
+    "Package": "xts",
+    "Version": "0.11-2"
+  },
+  {
+    "Package": "yaml",
+    "Version": "2.2.0"
+  },
+  {
+    "Package": "zoo",
+    "Version": "1.8-6"
+  }
+]
